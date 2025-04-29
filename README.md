@@ -1,54 +1,102 @@
-# React + TypeScript + Vite
+# 📚 GraphlyAI - README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Benvenuto in **GraphlyAI**! 🚀  
+Un SaaS moderno per generare grafici dinamici e interattivi usando AI senza bisogno di codificare o usare Excel.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Funzionalità principali
 
-## Expanding the ESLint configuration
+- Inserimento dati X e Y manualmente o caricamento CSV.
+- Generazione grafici interattivi (scatter, line, bar, pie) con Plotly.
+- Utilizzo di DeepSeek R1 tramite Together AI API per assistenza AI.
+- Download diretto dei grafici in PNG o HTML.
+- Interfaccia moderna con React + Tailwind CSS.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Stack Tecnologico
+
+- **Frontend**: React + Tailwind CSS
+- **Backend**: FastAPI
+- **Grafici**: Plotly
+- **Modello AI**: DeepSeek R1 (Together AI)
+
+---
+
+## 🏗️ Struttura Progetto
+
+```bash
+/root
+├── frontend/          # App React + Tailwind
+├── backend/           # API FastAPI + gestione AI
+├── shared/            # Utilities comuni (modelli dati, helpers)
+└── README.md          # Questo file
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Come avviare il progetto
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
 ```
+
+### Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+> 💡 **Assicurati di avere la tua Together AI API Key impostata in un file `.env`!**
+
+---
+
+## 🔑 Configurazione API Keys
+
+**Together AI:**
+
+- Crea un account su [Together AI](https://www.together.ai/)
+- Ottieni la API Key
+- Crea un file `.env` nel backend con:
+
+```
+TOGETHER_API_KEY=your_key_here
+```
+
+**(Facoltativo) Serper API Key** per ricerca web sicura:
+
+```
+SERPER_API_KEY=your_serper_key_here
+```
+
+---
+
+## 🎯 Roadmap
+
+- [x] Input manuale X e Y
+- [x] Upload file CSV
+- [x] Generazione grafici dinamici
+- [ ] Salvataggio cronologia grafici
+- [ ] Dashboard personale
+- [ ] Collegamento a Google Sheets
+- [ ] Supporto multimodale (immagini + dati)
+
+---
+
+## 👨‍💻 Autore
+
+Progetto sviluppato da **[Prosper Aiosa Omoruyi]** ✨  
+Con amore per la semplicità, la velocità e l'AI intelligente.
+
+---
+
+## 📜 Licenza
+
+Da definire (MIT, GPL o licenza proprietaria SaaS).
