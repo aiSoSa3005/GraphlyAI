@@ -1,6 +1,9 @@
+import '../App.css'
+
 const Logo = () => {
   return (
     <div className="w-auto bg-gradient-to-r from-[#0d113d] to-[#0f1327] py-3 px-5 flex justify-center items-center sm:py-6 sm:px-10 rounded-3xl shadow-2xl  flex-col">
+      <h1 className="text-white text-2xl font-sans">DATA AI</h1>
       <div className="sm:w-[400px] sm:h-[400px] w-[200px] h-[200px] my-3 rounded-full overflow-hidden bg-gradient-to-r from-[#142a62] to-[#0f1327] flex items-center justify-center">
         <div>
           {" "}
@@ -2467,7 +2470,7 @@ const Logo = () => {
       <div className="">
         <button className="text-white p-1 text-xl sm:text-2xl bg-gradient-to-r from-[#7f78ff] to-[#3093fc] sm:p-2 rounded-3xl">Generate now</button>
       </div>
-      <p className="text-white text-xl sm:text-2xl leading-relaxed">
+      <p className="text-white text-xl sm:text-2xl leading-relaxed font-sans">
         Generate dynamic and <br />
         interactive charts in seconds
       </p>
