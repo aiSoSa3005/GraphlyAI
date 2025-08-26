@@ -90,13 +90,3 @@ SERPER_API_KEY=your_serper_key_here
 
 ---
 
-## 👨‍💻 Autore
-
-Progetto sviluppato da **[Prosper Aiosa Omoruyi]** ✨  
-Con amore per la semplicità, la velocità e l'AI intelligente.
-
----
-
-## 📜 Licenza
-
-Da definire (MIT, GPL o licenza proprietaria SaaS).
