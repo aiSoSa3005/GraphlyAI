@@ -54,7 +54,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-> 💡 **Assicurati di avere la tua Together AI API Key impostata in un file `.env`!**
+>  **Assicurati di avere la tua Together AI API Key impostata in un file `.env`**
 
 ---
 
